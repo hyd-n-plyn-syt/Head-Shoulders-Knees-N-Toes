@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+    <object Name="Loose Eyeballs" Inherits="Item">
+        <part Name="Render" DisplayName="loose eyeballs" RenderString="o" ColorString="&w" />
+        <part Name="Physics" Weight="0.1" Category="BodyPart" />
+        <part Name="Description" Short="A pair of loose eyeballs." />
+        <part Name="Commerce" Value="5" />
+    </object>
+    <object Name="Severed Mouth" Inherits="Item">
+        <part Name="Render" DisplayName="severed mouth" RenderString="o" ColorString="&r" />
+        <part Name="Physics" Weight="0.2" Category="BodyPart" />
+        <part Name="Description" Short="A severed mouth." />
+        <part Name="Commerce" Value="5" />
+    </object>
+</objects>

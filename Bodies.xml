@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <bodies>
     <bodyparttypes>
-        <bodyparttype Type="Eyes" LimbBlueprintProperty="LooseEyeballsBlueprint" LimbBlueprintDefault="GenericEyes" UsuallyOn="Head" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
-        <bodyparttype Type="Mouth" LimbBlueprintProperty="MouthBlueprint" LimbBlueprintDefault="GenericMouth" UsuallyOn="Head" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+        <bodyparttype Type="Eyes" LimbBlueprintProperty="LooseEyeballsBlueprint" LimbBlueprintDefault="GenericEyes" UsuallyOn="Face" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+        <bodyparttype Type="Mouth" LimbBlueprintProperty="MouthBlueprint" LimbBlueprintDefault="GenericMouth" UsuallyOn="Face" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
     </bodyparttypes>
     <bodyparttypevariants>
-            <bodyparttypevariant VariantOf="Eyes" Type="Third Eye" Category="Animal" />
+        <bodyparttypevariant VariantOf="Eyes" Type="Third Eye" Category="Animal" />
     </bodyparttypevariants>
     <anatomies>
         <anatomy Name="Humanoid">
-            <part Type="Head" Load="Merge">
-                <part Type="Eyes" />
-                <part Type="Face" />
-                <part Type="Mouth" />                
+            <part Type="Head" Load="Replace">
+                <part Type="Face">
+                    <part Type="Eyes" />
+                    <part Type="Mouth" />
+                </part>
             </part>
+            <part Type="Back" />
+            <part Type="Arm" Laterality="Right">
+                <part Type="Hand" Laterality="Right" SupportsDependent="Hands" />
+            </part>
+            <part Type="Arm" Laterality="Left">
+                <part Type="Hand" Laterality="Left" SupportsDependent="Hands" />
+            </part>
+            <part Type="Missile Weapon" Laterality="Right" />
+            <part Type="Missile Weapon" Laterality="Left" />
+            <part Type="Hands" DependsOn="Hands" />
+            <part Type="Feet" />
         </anatomy>
     </anatomies>
 </bodies>
