@@ -1,0 +1,11 @@
+Head, Shoulders, Knees, and Toes
+
+This mod is an effort to rework the anatomy of Caves of Qud and move it's equipment, cybernetics, and mutations around to the new slots created by it, and ensure that enemies that spawn with these things, can spawn with all of those slots equipped so that it's not totally unbalanced.
+
+What will this do?
+* It should totally change what a geared character in Caves of Qud will look like, making a character feel much more ready and equipped towards the end game. No more deciding if I should have on the eyewear or the mask. Strap them both on.
+* In the first wave I plan to redefine the anatomy and equipment slots of the face, adding in two new slots. Eyes and Mouth. It will then move the goggle/glasses type equipment, mutations, and cybernetics into these new slots by hopefully editing the related XML files in as non-invasive way as possible, to retain compatibility with other mods.
+    * In the first pass on mutations I would like to add Night Vision to the eyes slot, visually, in preparation for future Eyes related mutations, gear, and perhaps cybernetic implants.
+    * I would like to move all mouth related mutations and gear to the new slot, Mouth. This includes beaks, muzzles, fangs, and mouth worn gear like the Girsh fangs. 
+    * I would also like to add make sure that mutations like slime spit, and the hidden mutations like acid spit, have physical features shown, with a bit of color added to it. Something like: slime spittle, with the text turned to the green the slime uses for it's tile. The same should be done for all physical mutations that do not have it in their own .cs file. Harmony patches work fine to achieve this.
+* After the head is feature complete, I will work my way down the body, adjusting each part of the humanoid anatomy, and others where I can, until I feel that each part of the anatomy is feature complete. The next on the chopping block is going to be the Arms, adding in Shoulders for each laterallity, and moving appropriate items to them like backpacks. (Mostly backpacks) And then adding in brand new variants of backpacks like quivers and bandoliers, and perhaps reworking them entirely into mobile storage containers that operate like any other container in the world. Of course the newer items will have further restrictions, allowing only ammunition type items, etc.

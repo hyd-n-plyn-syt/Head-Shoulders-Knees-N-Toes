@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<bodies>
+    <bodyparttypes>
+        <bodyparttype Type="Eyes" LimbBlueprintProperty="LooseEyeballsBlueprint" LimbBlueprintDefault="GenericEyes" UsuallyOn="Head" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+        <bodyparttype Type="Mouth" LimbBlueprintProperty="MouthBlueprint" LimbBlueprintDefault="GenericMouth" UsuallyOn="Head" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+    </bodyparttypes>
+    <bodyparttypevariants>
+            <bodyparttypevariant VariantOf="Eyes" Type="Third Eye" Category="Animal" />
+    </bodyparttypevariants>
+    <anatomies>
+        <anatomy Name="Humanoid">
+            <part Type="Head" Load="Merge">
+                <part Type="Eyes" />
+                <part Type="Face" />
+                <part Type="Mouth" />                
+            </part>
+        </anatomy>
+    </anatomies>
+</bodies>
