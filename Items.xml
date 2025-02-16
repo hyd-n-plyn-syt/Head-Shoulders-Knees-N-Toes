@@ -1,15 +1,89 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--******Index*******  
+1   Limb Blueprints
+2   Eyewear Edits
+3   Natural Parts
+999 End
+*******************-->
+<!--******************
+1   Limb Blueprints
+*******************-->
 <objects>
-    <object Name="Loose Eyeballs" Inherits="Item">
-        <part Name="Render" DisplayName="loose eyeballs" RenderString="o" ColorString="&w" />
+    <object Name="Severed Eyeballs" Inherits="Item">
+        <part Name="Render" DisplayName="severed eyeballs" RenderString="o" ColorString="&w" />
         <part Name="Physics" Weight="0.1" Category="BodyPart" />
-        <part Name="Description" Short="A pair of loose eyeballs." />
+        <part Name="Description" Short="A pair of severed eyeballs hanging by their optical nerves." />
         <part Name="Commerce" Value="5" />
     </object>
-    <object Name="Severed Mouth" Inherits="Item">
-        <part Name="Render" DisplayName="severed mouth" RenderString="o" ColorString="&r" />
+    <object Name="Severed Lips" Inherits="Item">
+        <part Name="Render" DisplayName="severed lips" RenderString="o" ColorString="&r" />
         <part Name="Physics" Weight="0.2" Category="BodyPart" />
-        <part Name="Description" Short="A severed mouth." />
+        <part Name="Description" Short="A severed pair of lips." />
         <part Name="Commerce" Value="5" />
     </object>
+<!--******************
+2   Eyewear Edits
+*******************-->
+    <object Name="BaseEyewear" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" WornOn="Eyes" />
+    </object>
+    <object Name="Goggles" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Mirrorshades" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" Ego="1" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Telescopic Monocle" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Night-vision Goggles" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Spectacles" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Telemetric Visor" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="Night-Sight Interpolators" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="1" DV="0" WornOn="Eyes" />
+    </object>
+    <object Name="VISAGE" Load="Merge">
+        <removepart Name="Armor" />
+        <part Name="Armor" AV="0" DV="1" WornOn="Eyes" />
+    </object>
+<!--******************
+3   Natural Parts
+*******************-->
+    <object Name="Eyes" Inherits="Armor">
+        <part Name="NoBreak" />
+        <part Name="NoDamage" />
+        <part Name="Armor" AV="0" DV="0" WornOn="Eyes" />
+        <part Name="Render" DisplayName="eyes" RenderString="*" Tile="defaultEyes.png" DetailColor="B" />
+        <part Name="Commerce" Value="0" />
+        <part Name="Description" Short="Humanoid eyes that watch their surroundings attentively." />
+        <part Name="NaturalEquipment" />
+        <part Name="Physics" Category="Natural Armor" IsReal="false" Weight="0" />
+        <removepart Name="TinkerItem" />
+        <intproperty Name="Natural" Value="1" />
+        <tag Name="ExcludeFromDynamicEncounters" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="Gender" Value="plural" />
+        <tag Name="AllowArmorDefaultBehavior" />
+        <tag Name="NaturalGear" />
+        <tag Name="PartDescription" Value="Worn on Eyes" />
+        <tag Name="InsertPartAfter" Value="Head" />
+        <tag Name="VisibleAsDefaultBehavior" />
+        </object>
+<!--******************
+999 End
+*******************-->
 </objects>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <bodies>
     <bodyparttypes>
-        <bodyparttype Type="Eyes" LimbBlueprintProperty="LooseEyeballsBlueprint" LimbBlueprintDefault="GenericEyes" UsuallyOn="Face" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
-        <bodyparttype Type="Mouth" LimbBlueprintProperty="MouthBlueprint" LimbBlueprintDefault="GenericMouth" UsuallyOn="Face" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
+        <bodyparttype Type="Eyes" DescriptionPrefix="Worn on" LimbBlueprintProperty="Severed Eyeballs" DefaultBehavior="DefaultEyes" Plural="false" Appendage="true" UsuallyOn="Face" Branching="Lateral,Longitudinal,Vertical,Stratal" ChimeraWeight="3" />
+        <bodyparttype Type="Mouth" LimbBlueprintProperty="SeveredLipsBlueprint" LimbBlueprintDefault="Severed Lips" Appendage="true" UsuallyOn="Face" Branching="Lateral,Vertical,Longitudinal,Stratal" ChimeraWeight="3" />
     </bodyparttypes>
     <bodyparttypevariants>
         <bodyparttypevariant VariantOf="Eyes" Type="Third Eye" Category="Animal" />

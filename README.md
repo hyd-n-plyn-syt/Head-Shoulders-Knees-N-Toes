@@ -1,6 +1,6 @@
 # Head, Shoulders, Knees, and Toes
 
-This mod is an effort to rework the anatomy of Caves of Qud and move its equipment, cybernetics, and mutations around to the new slots created by it, and ensure that enemies that spawn with these things can spawn with all of those slots equipped so that it's not totally unbalanced.
+This mod is an effort to rework the anatomy of Caves of Qud and move its equipment, cybernetics, and mutations around to the new slots created by it, and ensure that enemies that spawn with these things can spawn with all of those slots equipped so that it's not totally unbalanced. It will also serve as a Framework for future mutation and item mods.
 
 ## What will this do?
 
